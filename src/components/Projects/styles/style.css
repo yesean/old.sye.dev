@@ -5,15 +5,9 @@
   grid-template-columns: minmax(auto, 400px);
   row-gap: 2rem;
   justify-content: center;
+  justify-items: center;
   align-content: flex-start;
   grid-auto-rows: auto;
-}
-
-@media (min-width: 1000px) {
-  .projects {
-    grid-template-columns: repeat(2, minmax(auto, 400px));
-    column-gap: 2rem;
-  }
 }
 
 .projects::after {
@@ -22,7 +16,7 @@
 }
 
 .project-card {
-  width: 100%;
+  width: 80%;
   height: fit-content;
   border-radius: 5px;
   box-shadow: 0 0 5px 2.5px #ddd;
@@ -79,4 +73,15 @@
   transform: translateY(-2px);
   transition: 0.25s;
   color: #555;
+}
+
+@media (min-width: 900px) {
+  .projects {
+    grid-template-columns: repeat(2, minmax(auto, 400px));
+    column-gap: 2rem;
+  }
+
+  .project-card {
+    width: 100%;
+  }
 }

@@ -5,7 +5,15 @@ import { StaticImage } from "gatsby-plugin-image"
 const About: React.FC = () => {
   return (
     <div className="about-container">
-      <StaticImage src="../../assets/me.jpg" alt="me" className="about-image" />
+      <StaticImage
+        src="../../assets/me.jpg"
+        alt="me"
+        className="about-image"
+        imgStyle={{
+          borderRadius: "50%",
+          width: "25ch",
+        }}
+      />
       <ul className="about-description">
         <li>incoming frontend engineer intern @ meta</li>
         <li>former sde intern @ amazon</li>

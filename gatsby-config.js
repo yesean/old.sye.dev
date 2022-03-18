@@ -30,4 +30,5 @@ module.exports = {
     },
     `gatsby-plugin-gatsby-cloud`,
   ],
+  pathPrefix: "/personal-website-gatsby",
 }

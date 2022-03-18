@@ -7,8 +7,10 @@ type LayoutProp = {
 }
 
 const Layout: React.FC<LayoutProp> = ({ children, page }) => {
+  if (typeof window === "undefined") return null
+
   return (
-    <div className="app">
+    <div className="app" style={{ height: window.innerHeight }}>
       <Navbar page={page} />
       {children}
       <Footer />

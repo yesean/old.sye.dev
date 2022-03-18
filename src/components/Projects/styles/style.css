@@ -31,6 +31,7 @@
   object-fit: cover;
   width: auto;
   height: 300px;
+  border-radius: 5px 5px 0 0;
 }
 
 .project-info {

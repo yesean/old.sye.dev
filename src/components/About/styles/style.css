@@ -1,0 +1,22 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image {
+  border-radius: 50%;
+  width: 25ch;
+}
+
+.about-description {
+  color: #3a3a3a;
+  width: 30ch;
+  max-width: 600px;
+  font-size: 1.0625rem;
+}
+
+.about-description > li {
+  margin: 1rem;
+}

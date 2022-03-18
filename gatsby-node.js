@@ -3,5 +3,13 @@
  *
  * See: https://www.gatsbyjs.com/docs/node-apis/
  */
+exports.onCreateBabelConfig = ({ actions }) => {
+  actions.setBabelPlugin({
+    name: "@babel/plugin-transform-react-jsx",
+    options: {
+      runtime: "automatic",
+    },
+  })
+}
 
 // You can delete this file if you're not using it

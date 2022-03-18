@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.footer-link {
+  margin: 0 2rem;
+  color: #292929;
+  font-size: 1.5rem;
+}
+
+.footer-link:hover {
+  transform: translateY(-2px);
+  transition: 0.25s;
+  color: #555;
+}
+
+@media (min-width: 341px) {
+  .footer-link {
+    margin: 0 2.5rem;
+  }
+}
+
+@media (min-width: 389px) {
+  .footer-link {
+    margin: 0 3rem;
+  }
+}

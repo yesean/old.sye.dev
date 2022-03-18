@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.navbar-link {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #292929;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.navbar-link:not(.active):hover {
+  transform: translateY(-1px);
+  transition: 0.25s;
+  color: #555;
+}
+
+.navbar-link.active {
+  text-decoration: underline;
+}

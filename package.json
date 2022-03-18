@@ -25,6 +25,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "@types/react-helmet": "^6.1.5",
     "prettier": "2.2.1",
     "typescript": "^4.6.2"
   },

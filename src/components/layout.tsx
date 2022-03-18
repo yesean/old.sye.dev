@@ -1,7 +1,8 @@
+import { Helmet } from "react-helmet"
+import { useEffect, useState } from "react"
+import "../index.css"
 import Footer from "./Footer"
 import Navbar from "./Navbar"
-import "../index.css"
-import { useEffect, useState } from "react"
 
 type LayoutProp = {
   page: "/" | "/projects" | "/about"
@@ -19,6 +20,10 @@ const Layout: React.FC<LayoutProp> = ({ children, page }) => {
 
   return (
     <div className="app" style={{ height }}>
+      <Helmet>
+        <title>Hi, I'm Sean!</title>
+        <link rel="canonical" href="https://seanye.me" />
+      </Helmet>
       <Navbar page={page} />
       {children}
       <Footer />

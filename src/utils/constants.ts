@@ -46,6 +46,6 @@ export const PROJECTS = [
     projectURL: `${githubProfileURL}/dotfiles`,
     githubURL: `${githubProfileURL}/dotfiles`,
     description:
-      "my dotfiles for various programs including vim, zsh, tmux, etc",
+      "My config files for my Linux/macOS environment including neovim, zsh, tmux, etc.",
   },
 ]

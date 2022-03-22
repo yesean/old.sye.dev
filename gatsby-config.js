@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Hi, I'm Sean",
-    description: "Sean Ye's personal website",
+    description: "Hi, I'm Sean. Nice to meet you!",
     author: "Sean Ye",
   },
   plugins: [
@@ -30,5 +30,4 @@ module.exports = {
     },
     `gatsby-plugin-gatsby-cloud`,
   ],
-  pathPrefix: "/personal-website-gatsby",
 }

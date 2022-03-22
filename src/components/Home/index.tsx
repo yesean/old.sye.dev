@@ -1,5 +1,5 @@
 import * as React from "react"
-import "./styles/style.css"
+import "./style.css"
 
 const Home: React.FC = () => {
   return (

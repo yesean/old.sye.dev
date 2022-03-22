@@ -1,6 +1,6 @@
 import Project from "./Project"
 import { PROJECTS } from "../../utils/constants"
-import "./styles/style.css"
+import "./style.css"
 
 const Projects: React.FC = () => {
   return (

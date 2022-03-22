@@ -1,5 +1,5 @@
 import * as React from "react"
-import "./styles/style.css"
+import "./style.css"
 import { StaticImage } from "gatsby-plugin-image"
 
 const About: React.FC = () => {

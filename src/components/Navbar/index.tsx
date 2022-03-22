@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import "./styles/style.css"
+import "./style.css"
 import { NAVBAR_LINKS } from "../../utils/constants"
 import { Link } from "gatsby"
 

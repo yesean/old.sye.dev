@@ -1,27 +1,27 @@
-import * as React from 'react';
-import './styles/style.css';
-import { FOOTER_LINKS } from '../../utils/constants';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import * as React from "react"
+import "./style.css"
+import { FOOTER_LINKS } from "../../utils/constants"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
 
 const footerItems = [
   {
-    name: 'LinkedIn',
+    name: "LinkedIn",
     href: FOOTER_LINKS.linkedin,
     icon: <FontAwesomeIcon icon={faLinkedinIn} />,
   },
   {
-    name: 'GitHub',
+    name: "GitHub",
     href: FOOTER_LINKS.github,
     icon: <FontAwesomeIcon icon={faGithub} />,
   },
   {
-    name: 'Mail',
+    name: "Mail",
     href: FOOTER_LINKS.mail,
     icon: <FontAwesomeIcon icon={faEnvelope} />,
   },
-];
+]
 
 const Footer: React.FC = () => {
   return (
@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
         </a>
       ))}
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

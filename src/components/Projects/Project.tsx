@@ -51,28 +51,28 @@ type ProjectProps = {
 
 type ProjectName = "pathmazer" | "todo" | "generals.io bot" | "dotfiles"
 const renderImage = (name: ProjectName) => {
+  const imgStyle = {
+    objectFit: "scale-down",
+    borderRadius: "5px 5px 0 0",
+  } as React.CSSProperties
   if (name === "pathmazer") {
     return (
       <StaticImage
         src="../../assets/pathmazer.png"
         alt={name}
-        className="project-image"
+        imgStyle={imgStyle}
       />
     )
   } else if (name === "todo") {
     return (
-      <StaticImage
-        src="../../assets/todo.png"
-        alt={name}
-        className="project-image"
-      />
+      <StaticImage src="../../assets/todo.png" alt={name} imgStyle={imgStyle} />
     )
   } else if (name === "generals.io bot") {
     return (
       <StaticImage
         src="../../assets/generals.png"
         alt={name}
-        className="project-image"
+        imgStyle={imgStyle}
       />
     )
   } else if (name === "dotfiles") {
@@ -80,7 +80,7 @@ const renderImage = (name: ProjectName) => {
       <StaticImage
         src="../../assets/dotfiles.png"
         alt={name}
-        className="project-image"
+        imgStyle={imgStyle}
       />
     )
   }

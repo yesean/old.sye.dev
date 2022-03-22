@@ -25,13 +25,7 @@
 .project-image-container {
   display: flex;
   flex-direction: column;
-}
-
-.project-image {
-  object-fit: cover;
-  width: auto;
-  height: 300px;
-  border-radius: 5px 5px 0 0;
+  background: #eee;
 }
 
 .project-info {

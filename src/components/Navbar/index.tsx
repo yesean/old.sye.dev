@@ -11,10 +11,36 @@ const defaultNavbarItems = [
     className: "navbar-link",
   },
   { name: "about", href: NAVBAR_LINKS.about, className: "navbar-link" },
+  { name: "resume", href: NAVBAR_LINKS.resume, className: "navbar-link" },
 ]
 
 type NavbarProps = {
   page: "/" | "/projects" | "/about"
+}
+
+const renderLink = ({
+  name,
+  href,
+  className,
+}: typeof defaultNavbarItems[0]) => {
+  if (href.match(/\..*/))
+    return (
+      <a
+        key={name}
+        href={href}
+        className={className}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {name}
+      </a>
+    )
+
+  return (
+    <Link key={name} to={href} className={className}>
+      {name}
+    </Link>
+  )
 }
 
 const Navbar: React.FC<NavbarProps> = ({ page }) => {
@@ -29,15 +55,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
     )
   }, [])
 
-  return (
-    <nav className="navbar">
-      {navbarItems.map(({ name, href, className }) => (
-        <Link key={name} to={href} className={className}>
-          {name}
-        </Link>
-      ))}
-    </nav>
-  )
+  return <nav className="navbar">{navbarItems.map(renderLink)}</nav>
 }
 
 export default Navbar

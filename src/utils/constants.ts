@@ -3,6 +3,7 @@ export const NAVBAR_LINKS = {
   home: "/",
   projects: "/projects",
   about: "/about",
+  resume: "/resume.pdf",
 }
 
 const githubProfileURL = "https://github.com/yesean"

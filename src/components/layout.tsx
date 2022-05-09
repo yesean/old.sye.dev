@@ -21,7 +21,7 @@ const Layout: React.FC<LayoutProp> = ({ children, page }) => {
   return (
     <div className="app" style={{ height }}>
       <Helmet>
-        <title>Hi, I'm Sean!</title>
+        <title>sean ye</title>
         <link rel="canonical" href="https://seanye.me" />
       </Helmet>
       <Navbar page={page} />

@@ -6,7 +6,11 @@ const Home: React.FC = () => {
     <div className="home">
       <div className="name-description-container">
         <h1 className="name">Sean Ye</h1>
-        <h2 className="description">software engineer | ucsd '23</h2>
+        <div className="description-container">
+          <h2 className="left description">cs @ ucsd</h2>
+          <h2 className="spacer description"> | </h2>
+          <h2 className="right description">coffee addict</h2>
+        </div>
       </div>
     </div>
   )

@@ -5,7 +5,7 @@
 }
 
 .name-description-container {
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 .name {
@@ -15,9 +15,26 @@
   font-weight: 600;
 }
 
+.description-container {
+  display: flex;
+  align-items: center;
+}
+
 .description {
-  text-align: center;
   margin: 0;
   font-size: 1.25rem;
   font-weight: 600;
+
+  white-space: pre;
+  width: 48%;
+  flex: 0;
+}
+
+.description.left,
+.description.right {
+  flex: 1;
+}
+
+.description.left {
+  text-align: right;
 }

@@ -1,8 +1,4 @@
 {
   "main.js": "render-page.js",
-  "render-page.js.map": "render-page.js.map",
-  "static/dotfiles.png": "static/dotfiles-b5bd5313ec7cb622760b9c043f4f7c0b.png",
-  "static/generalsio-bot.png": "static/generalsio-bot-a6013781a3ad2122f234bbc4a9eacec1.png",
-  "static/minimal-todolist.png": "static/minimal-todolist-b6a37f97992c79ce3957d95f7a85a591.png",
-  "static/pathmaze-visualizer.png": "static/pathmaze-visualizer-432934ff202100956b368e07c5c602ec.png"
+  "render-page.js.map": "render-page.js.map"
 }

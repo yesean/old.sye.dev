@@ -25,6 +25,8 @@
 .project-image-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  aspect-ratio: 1.326 / 1;
   background: #eee;
 }
 

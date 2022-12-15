@@ -15,8 +15,7 @@ const About: React.FC = () => {
         }}
       />
       <ul className="about-description">
-        <li>former frontend engineer intern @ meta</li>
-        <li>former sde intern @ amazon</li>
+        <li>prev @ meta (fee), amazon (sde)</li>
         <li>cs @ ucsd '23</li>
         <li>obsessed w/ web dev, neovim, coffee, biang biang noodles</li>
         <li>unix philosophy enthusiast</li>

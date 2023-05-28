@@ -20,5 +20,5 @@
 }
 
 .navbar-link.active {
-  text-decoration: underline;
+  color: #219ebc;
 }

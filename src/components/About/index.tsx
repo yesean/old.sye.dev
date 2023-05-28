@@ -15,11 +15,10 @@ const About: React.FC = () => {
         }}
       />
       <ul className="about-description">
-        <li>prev @ meta (fee), amazon (sde)</li>
+        <li>prev @ meta, amazon</li>
         <li>cs @ ucsd '23</li>
-        <li>obsessed w/ web dev, neovim, coffee, biang biang noodles</li>
+        <li>obsessed w/ software, customizing neovim, and ethiopian coffee</li>
         <li>unix philosophy enthusiast</li>
-        <li>laker nation!</li>
       </ul>
     </div>
   )

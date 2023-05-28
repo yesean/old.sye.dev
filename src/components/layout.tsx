@@ -1,11 +1,12 @@
 import { Helmet } from "react-helmet"
-import { useEffect, useState } from "react"
+import { ReactNode, useEffect, useState } from "react"
 import "../index.css"
 import Footer from "./Footer"
 import Navbar from "./Navbar"
 
 type LayoutProp = {
   page: "/" | "/projects" | "/about"
+  children: ReactNode
 }
 
 const Layout: React.FC<LayoutProp> = ({ children, page }) => {

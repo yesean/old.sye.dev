@@ -20,7 +20,7 @@ const renderLink = (link: ProjectLink) => (
 )
 
 const parseDescription = (desc: Description) => {
-  if (typeof desc === "string" || desc.length === 0) return desc
+  if (typeof desc === "string" || desc.length === 0) return desc as string
 
   // check if enough links are provided
   const texts = (desc[0] as string).split("$link")
@@ -49,17 +49,17 @@ type ProjectProps = {
 }
 
 type ProjectName =
-  | "qbhub"
+  | "QBHub"
   | "pathmazer"
   | "todo"
   | "generals.io bot"
   | "dotfiles"
 const renderImage = (name: ProjectName) => {
   const imgStyle = {
-    objectFit: "scale-down",
+    objectFit: "cover",
     borderRadius: "5px 5px 0 0",
   } as React.CSSProperties
-  if (name === "qbhub") {
+  if (name === "QBHub") {
     return (
       <StaticImage
         src="../../assets/qbhub.png"

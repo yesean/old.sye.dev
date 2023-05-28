@@ -19,7 +19,6 @@
     "gatsby-plugin-sharp": "^3.4.1",
     "gatsby-source-filesystem": "^3.4.0",
     "gatsby-transformer-sharp": "^3.4.0",
-    "gh-pages": "^4.0.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -36,7 +35,6 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gh-pages -d public",
     "deploy:full": "yarn build && yarn deploy",
     "develop": "gatsby develop -H 0.0.0.0",
     "start": "yarn run develop",

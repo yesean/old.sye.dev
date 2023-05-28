@@ -8,7 +8,6 @@ const Projects: React.FC = () => {
       {PROJECTS.map(proj => (
         <Project
           key={proj.name}
-          imageSrc={proj.imageSrc}
           name={proj.name}
           description={proj.description}
           projectURL={proj.projectURL}

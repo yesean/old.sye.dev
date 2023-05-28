@@ -16,7 +16,12 @@ export const FOOTER_LINKS = {
 
 export const PROJECTS = [
   {
-    imageSrc: "../../assets/pathmaze-visualizer.png",
+    name: "QBHub",
+    projectURL: "https://qbhub.io",
+    githubURL: `${githubProfileURL}/qbhub`,
+    description: "A digital platform for studying and playing Quizbowl.",
+  },
+  {
     name: "pathmazer",
     projectURL: "https://pathmazer.com",
     githubURL: `${githubProfileURL}/pathmazer`,
@@ -24,15 +29,13 @@ export const PROJECTS = [
       "A beautiful visualizer for pathfinding and maze generation algorithms.",
   },
   {
-    imageSrc: "../../assets/minimal-todolist.png",
     name: "todo",
-    projectURL: "https://minimaltodos.com",
+    projectURL: `${githubProfileURL}/todo`,
     githubURL: `${githubProfileURL}/todo`,
     description:
       "A clean, minimal todo list with user accounts designed for getting work done.",
   },
   {
-    imageSrc: "../../assets/generalsio-bot.png",
     name: "generals.io bot",
     projectURL: "http://bot.generals.io/rankings/14",
     githubURL: `${githubProfileURL}/generalsio-bot`,
@@ -42,7 +45,6 @@ export const PROJECTS = [
     ],
   },
   {
-    imageSrc: "../../assets/dotfiles.png",
     name: "dotfiles",
     projectURL: `${githubProfileURL}/dotfiles`,
     githubURL: `${githubProfileURL}/dotfiles`,

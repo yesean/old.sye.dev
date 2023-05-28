@@ -1,4 +1,3 @@
-import { ReactNode } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faLink } from "@fortawesome/free-solid-svg-icons"
@@ -10,6 +9,7 @@ type Description = string | (string | ProjectLink)[]
 
 const renderLink = (link: ProjectLink) => (
   <a
+    key={link.name}
     href={link.href}
     target="_blank"
     rel="noopener noreferrer"
@@ -42,20 +42,32 @@ const parseDescription = (desc: Description) => {
 }
 
 type ProjectProps = {
-  imageSrc: string
   name: string
   description: Description
   projectURL: string
   githubURL: string
 }
 
-type ProjectName = "pathmazer" | "todo" | "generals.io bot" | "dotfiles"
+type ProjectName =
+  | "qbhub"
+  | "pathmazer"
+  | "todo"
+  | "generals.io bot"
+  | "dotfiles"
 const renderImage = (name: ProjectName) => {
   const imgStyle = {
     objectFit: "scale-down",
     borderRadius: "5px 5px 0 0",
   } as React.CSSProperties
-  if (name === "pathmazer") {
+  if (name === "qbhub") {
+    return (
+      <StaticImage
+        src="../../assets/qbhub.png"
+        alt={name}
+        imgStyle={imgStyle}
+      />
+    )
+  } else if (name === "pathmazer") {
     return (
       <StaticImage
         src="../../assets/pathmazer.png"
@@ -87,7 +99,6 @@ const renderImage = (name: ProjectName) => {
 }
 
 const Project: React.FC<ProjectProps> = ({
-  imageSrc,
   name,
   description,
   projectURL,

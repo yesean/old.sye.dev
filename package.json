@@ -36,7 +36,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "echo 'seanye.me' > ./public/CNAME && gh-pages -d public",
+    "deploy": "gh-pages -d public",
     "deploy:full": "yarn build && yarn deploy",
     "develop": "gatsby develop -H 0.0.0.0",
     "start": "yarn run develop",
@@ -45,6 +45,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yesean/personal-website"
+    "url": "https://github.com/yesean/sye.dev"
   }
 }

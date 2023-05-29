@@ -29,5 +29,11 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
+    {
+      resolve: `gatsby-plugin-plausible`,
+      options: {
+        domain: `sye.dev`,
+      },
+    },
   ],
 }
